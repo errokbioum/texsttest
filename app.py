@@ -17,6 +17,8 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 import json
 app = Flask(__name__)
 CORS(app) 
+import tensorflow as tf
+tf.config.set_visible_devices([], 'GPU')
 
 
 
